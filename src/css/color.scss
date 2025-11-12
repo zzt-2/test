@@ -1,0 +1,162 @@
+/* =============== 全局颜色系统 =============== */
+
+/* 默认主题 - 浅色模式 */
+:root {
+	--bg-primary: #f0f4f8;
+	--bg-secondary: #ffffff;
+	--bg-tertiary: #ffffff;
+	--accent: #008b8b;
+	--accent-hover: #00ced1;
+	--text-primary: #1e293b;
+	--text-secondary: #475569;
+	--text-placeholder: #cbd5e1;
+	--border: #e2e8f0;
+	--positive: #21ba45;
+	--negative: #dc2626;
+	--info: #0891b2;
+	--warning: #f59e0b;
+}
+
+/* =============== 深色主题 =============== */
+[data-theme='dark'] {
+	--bg-primary: #111827;
+	--bg-secondary: #0c1528;
+	--bg-tertiary: #29282d;
+	--accent: #00d9d9;
+	--accent-hover: #00ffd9;
+	--text-primary: #34aee5;
+	--text-secondary: #ffffff;
+	--text-placeholder: #848484;
+	--border: #06b6d4;
+}
+
+/* =============== 海洋蓝主题 =============== */
+[data-theme='ocean'] {
+	--bg-primary: #0a1628;
+	--bg-secondary: #0d1f2d;
+	--bg-tertiary: #060e17;
+	--accent: #00bfff;
+	--accent-hover: #87ebff;
+	--text-primary: #e0f4ff;
+	--text-secondary: #8fa0b8;
+	--text-placeholder: #3d4a5c;
+	--border: #1a3a52;
+}
+
+/* =============== 森林绿主题 =============== */
+[data-theme='forest'] {
+	--bg-primary: #0d2f1a;
+	--bg-secondary: #132b1f;
+	--bg-tertiary: #08140d;
+	--accent: #00d98e;
+	--accent-hover: #2ecc71;
+	--text-primary: #d4ffdb;
+	--text-secondary: #8fb899;
+	--text-placeholder: #3d5a49;
+	--border: #1a4d2e;
+}
+
+/* =============== 日落橙主题 =============== */
+[data-theme='sunset'] {
+	--bg-primary: #1a1610;
+	--bg-secondary: #241b0f;
+	--bg-tertiary: #4d3e2a;
+	--accent: #ffb800;
+	--accent-hover: #ff4d00;
+	--text-primary: #ffd58c;
+	--text-secondary: #b8a98a;
+	--text-placeholder: #7a6e58;
+	--border: #ff9d00;
+}
+
+/* =============== 赛博朋克主题 =============== */
+[data-theme='cyberpunk'] {
+	--bg-primary: #0a0e27;
+	--bg-secondary: #0f1429;
+	--bg-tertiary: #05070f;
+	--accent: #ff006e;
+	--accent-hover: #ff00ff;
+	--text-primary: #00ff41;
+	--text-secondary: #b0b8c8;
+	--text-placeholder: #4b5563;
+	--border: #2a3f5f;
+}
+
+[data-theme='neon-blue'] {
+	--bg-primary: #0a1027;
+	--bg-secondary: #111a3d;
+	--bg-tertiary: #060a1a;
+	--accent: #00f0ff;
+	--accent-hover: #80f5ff;
+	--text-primary: #c8faff;
+	--text-secondary: #7fdbff;
+	--text-placeholder: #30445e;
+	--border: #1e3250;
+}
+
+/* ========== 科幻主题：量子紫 Quantum ========== */
+[data-theme='quantum-purple'] {
+	--bg-primary: #0b0e1a;
+	--bg-secondary: #0d1027;
+	--bg-tertiary: #24284d;
+	--accent: #00f5d4;
+	--accent-hover: #7c4cff;
+	--text-primary: #a1f5f9;
+	--text-secondary: #8c90c5;
+	--text-placeholder: #5a5f8a;
+	--border: #2de0e0;
+}
+
+/* ========== 科幻主题：离子绿 Ion ========== */
+[data-theme='ion-green'] {
+	--bg-primary: #0f1a12;
+	--bg-secondary: #0d2810;
+	--bg-tertiary: #2a4d32;
+	--accent: #00ff66;
+	--accent-hover: #d9ff00;
+	--text-primary: #9cffb4;
+	--text-secondary: #7a9c83;
+	--text-placeholder: #5a735f;
+	--border: #00ff88;
+}
+
+/* ========== 科幻主题：质子橙 Proton ========== */
+[data-theme='proton-orange'] {
+	--bg-primary: #231600;
+	--bg-secondary: #3d2500;
+	--bg-tertiary: #140c00;
+	--accent: #ff8a00;
+	--accent-hover: #ffb366;
+	--text-primary: #ffe3c2;
+	--text-secondary: #ffb366;
+	--text-placeholder: #5e4a38;
+	--border: #5a3f1f;
+}
+
+/* ========== 科幻主题：反物质红 Antimatter ========== */
+[data-theme='antimatter-red'] {
+	--bg-primary: #1a0f0f;
+	--bg-secondary: #2a0d0d;
+	--bg-tertiary: #5d2d2d;
+	--accent: #ff0033;
+	--accent-hover: #ffaa00;
+	--text-primary: #ff9eae;
+	--text-secondary: #b59898;
+	--text-placeholder: #8a6d6d;
+	--border: #ff1744;
+}
+
+/* ========== 科幻主题：星尘灰 Stardust ========== */
+[data-theme='stardust-gray'] {
+	--bg-primary: #121217;
+	--bg-secondary: #1d1d28;
+	--bg-tertiary: #0e0e14;
+	--accent: #aaff00;
+	--accent-hover: #ddff99;
+	--text-primary: #f2ffcc;
+	--text-secondary: #ccff66;
+	--text-placeholder: #4a4d3e;
+	--border: #333341;
+}
+
+$my-color-primary: var(--accent);

@@ -14,7 +14,7 @@ export class WindowManager {
 			height: 600,
 			minWidth: 800, // 最小宽度
 			minHeight: 600, // 最小高度
-			frame: true,
+			frame: false,
 			useContentSize: true,
 			autoHideMenuBar: true,
 			webPreferences: {
@@ -23,7 +23,7 @@ export class WindowManager {
 				preload: path.resolve(
 					currentDir,
 					path.join(
-						process.env.QUASAR_ELECTRON_PRELOAD_FOLDER,
+						process.env.QUASAR_ELECTRON_PRELOAD_FOLDER || '',
 						'electron-preload' + process.env.QUASAR_ELECTRON_PRELOAD_EXTENSION
 					)
 				),
@@ -104,12 +104,12 @@ export class WindowManager {
 				const { workArea } = screen.getPrimaryDisplay();
 
 				// 设置窗口位置和大小以适应工作区域
-				this.mainWindow.setBounds({
-					x: workArea.x,
-					y: workArea.y,
-					width: workArea.width,
-					height: workArea.height,
-				});
+				// this.mainWindow.setBounds({
+				// 	x: workArea.x,
+				// 	y: workArea.y,
+				// 	width: workArea.width,
+				// 	height: workArea.height,
+				// });
 
 				this.mainWindow.show();
 				this.mainWindow.focus(); // 明确要求焦点

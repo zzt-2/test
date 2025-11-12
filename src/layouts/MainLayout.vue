@@ -1,9 +1,37 @@
 <template>
-  <div class="flex flex-col h-full w-full">
+  <q-layout view="hHh lpR fFf" class="h-100vh flex flex-col">
     <TopMenuBar />
-  </div>
+    <div class="flex-1 min-h-0 overflow-y-auto hologram-grid">
+      <TestPage />
+      <ParticleEffect />
+      <router-view />
+    </div>
+  </q-layout>
 </template>
 
 <script setup lang="ts">
+import { provideAppManagers } from '@core/stores'
 
+const appManagers = provideAppManagers({
+  debugMode: import.meta.env.DEV, // 开发环境启用调试
+});
+
+// 初始化所有管理器
+onMounted(async () => {
+  await appManagers.initialize();
+});
+
+// 清理
+onUnmounted(() => {
+  appManagers.destroy();
+});
 </script>
+
+<style scoped lang="scss">
+.hologram-grid {
+  background-image:
+    linear-gradient(rgba(0, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 10px 10px;
+}
+</style>

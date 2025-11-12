@@ -98,7 +98,7 @@ export default defineConfig((/* ctx */) => {
 				[
 					'unplugin-vue-components/vite',
 					{
-						dirs: ['src/core/components', 'src/ui'],
+						dirs: ['src/core/components', 'src/pages', 'src/modules/**/components', 'src/ui'],
 						dts: 'src/components.d.ts',
 					},
 				],
@@ -130,6 +130,7 @@ export default defineConfig((/* ctx */) => {
 				'Notify',
 				'Dialog',
 				'Loading',
+				'Dark',
 				// ...其他插件
 			],
 		},

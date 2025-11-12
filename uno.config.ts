@@ -30,4 +30,8 @@ export default defineConfig({
 			primary: 'rgb(168, 85, 247)',
 		},
 	},
+	shortcuts: {
+		'flex-center': 'flex items-center justify-center',
+		'grid-center': 'grid place-items-center',
+	},
 });

@@ -12,8 +12,12 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     CenterControlArea: typeof import('./core/components/CenterControlArea.vue')['default']
+    ErrorNotFound: typeof import('./pages/ErrorNotFound.vue')['default']
+    IndexPage: typeof import('./pages/IndexPage.vue')['default']
+    ParticleEffect: typeof import('./core/components/ParticleEffect.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TestPage: typeof import('./pages/TestPage.vue')['default']
     TopMenuBar: typeof import('./core/components/TopMenuBar.vue')['default']
   }
 }
