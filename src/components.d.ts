@@ -17,6 +17,7 @@ declare module 'vue' {
     ParticleEffect: typeof import('./core/components/ParticleEffect.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SettingsPanel: typeof import('./core/components/SettingsPanel.vue')['default']
     TestPage: typeof import('./pages/TestPage.vue')['default']
     TopMenuBar: typeof import('./core/components/TopMenuBar.vue')['default']
   }

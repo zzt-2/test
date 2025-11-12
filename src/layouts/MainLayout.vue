@@ -6,15 +6,22 @@
       <ParticleEffect />
       <router-view />
     </div>
+
+    <!-- 设置面板 -->
+    <q-drawer v-model="settingsStore.isSettingsPanelOpen" side="left" :width="600" :breakpoint="0" overlay elevated>
+      <SettingsPanel />
+    </q-drawer>
   </q-layout>
 </template>
 
 <script setup lang="ts">
-import { provideAppManagers } from '@core/stores'
+import { provideAppManagers, useSettingsStore } from '@core/stores'
 
 const appManagers = provideAppManagers({
   debugMode: import.meta.env.DEV, // 开发环境启用调试
 });
+
+const settingsStore = useSettingsStore();
 
 // 初始化所有管理器
 onMounted(async () => {

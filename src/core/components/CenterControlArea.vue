@@ -24,11 +24,13 @@
 
 <script setup lang="ts">
 import { windowAPI } from '@core/api';
+import { useSettingsStore } from '@core/stores';
 
 const isMaximized = ref(false);
+const settingsStore = useSettingsStore();
 
 const handleSettings = () => {
-  console.log('handleSettings');
+  settingsStore.toggleSettingsPanel();
 };
 
 const handleMinimize = () => {

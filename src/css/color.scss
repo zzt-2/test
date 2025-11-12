@@ -11,10 +11,45 @@
 	--text-secondary: #475569;
 	--text-placeholder: #cbd5e1;
 	--border: #e2e8f0;
-	--positive: #21ba45;
-	--negative: #dc2626;
-	--info: #0891b2;
-	--warning: #f59e0b;
+}
+
+/* =============== 暖色主题 =============== */
+[data-theme='warm'] {
+	--bg-primary: #ffffef;
+	--bg-secondary: #fff9e6;
+	--bg-tertiary: #f8f4e6;
+	--accent: #e67e22;
+	--accent-hover: #d35400;
+	--text-primary: #2c3e50;
+	--text-secondary: #7f8c8d;
+	--text-placeholder: #bdc3c7;
+	--border: #ecf0f1;
+}
+
+/* =============== 淡蓝色主题 =============== */
+[data-theme='blue'] {
+	--bg-primary: #e2f7ff;
+	--bg-secondary: #ddfdff;
+	--bg-tertiary: #bbffff;
+	--accent: #3182ce;
+	--accent-hover: #2b6cb0;
+	--text-primary: #303e56;
+	--text-secondary: #3c4556;
+	--text-placeholder: #cbd5e0;
+	--border: #e2e8f0;
+}
+
+/* =============== 薄荷绿主题 =============== */
+[data-theme='mint'] {
+	--bg-primary: #eefffc;
+	--bg-secondary: #d8fff4;
+	--bg-tertiary: #c1fff2;
+	--accent: #059669;
+	--accent-hover: #26af88;
+	--text-primary: #043e2f;
+	--text-secondary: #065f46;
+	--text-placeholder: #b3d4c1;
+	--border: #d1fae5;
 }
 
 /* =============== 深色主题 =============== */
@@ -69,31 +104,6 @@
 	--border: #ff9d00;
 }
 
-/* =============== 赛博朋克主题 =============== */
-[data-theme='cyberpunk'] {
-	--bg-primary: #0a0e27;
-	--bg-secondary: #0f1429;
-	--bg-tertiary: #05070f;
-	--accent: #ff006e;
-	--accent-hover: #ff00ff;
-	--text-primary: #00ff41;
-	--text-secondary: #b0b8c8;
-	--text-placeholder: #4b5563;
-	--border: #2a3f5f;
-}
-
-[data-theme='neon-blue'] {
-	--bg-primary: #0a1027;
-	--bg-secondary: #111a3d;
-	--bg-tertiary: #060a1a;
-	--accent: #00f0ff;
-	--accent-hover: #80f5ff;
-	--text-primary: #c8faff;
-	--text-secondary: #7fdbff;
-	--text-placeholder: #30445e;
-	--border: #1e3250;
-}
-
 /* ========== 科幻主题：量子紫 Quantum ========== */
 [data-theme='quantum-purple'] {
 	--bg-primary: #0b0e1a;
@@ -105,45 +115,6 @@
 	--text-secondary: #8c90c5;
 	--text-placeholder: #5a5f8a;
 	--border: #2de0e0;
-}
-
-/* ========== 科幻主题：离子绿 Ion ========== */
-[data-theme='ion-green'] {
-	--bg-primary: #0f1a12;
-	--bg-secondary: #0d2810;
-	--bg-tertiary: #2a4d32;
-	--accent: #00ff66;
-	--accent-hover: #d9ff00;
-	--text-primary: #9cffb4;
-	--text-secondary: #7a9c83;
-	--text-placeholder: #5a735f;
-	--border: #00ff88;
-}
-
-/* ========== 科幻主题：质子橙 Proton ========== */
-[data-theme='proton-orange'] {
-	--bg-primary: #231600;
-	--bg-secondary: #3d2500;
-	--bg-tertiary: #140c00;
-	--accent: #ff8a00;
-	--accent-hover: #ffb366;
-	--text-primary: #ffe3c2;
-	--text-secondary: #ffb366;
-	--text-placeholder: #5e4a38;
-	--border: #5a3f1f;
-}
-
-/* ========== 科幻主题：反物质红 Antimatter ========== */
-[data-theme='antimatter-red'] {
-	--bg-primary: #1a0f0f;
-	--bg-secondary: #2a0d0d;
-	--bg-tertiary: #5d2d2d;
-	--accent: #ff0033;
-	--accent-hover: #ffaa00;
-	--text-primary: #ff9eae;
-	--text-secondary: #b59898;
-	--text-placeholder: #8a6d6d;
-	--border: #ff1744;
 }
 
 /* ========== 科幻主题：星尘灰 Stardust ========== */
@@ -158,5 +129,3 @@
 	--text-placeholder: #4a4d3e;
 	--border: #333341;
 }
-
-$my-color-primary: var(--accent);

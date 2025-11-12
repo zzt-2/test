@@ -21,6 +21,21 @@ const THEMES: Record<string, Theme> = {
 		label: '浅色',
 		previewColors: ['#ffffff', '#f0f4f8'],
 	},
+	warm: {
+		id: 'warm',
+		label: '暖色',
+		previewColors: ['#ffffef', '#fff9e6'],
+	},
+	blue: {
+		id: 'blue',
+		label: '淡蓝色',
+		previewColors: ['#e2f7ff', '#ddfdff'],
+	},
+	mint: {
+		id: 'mint',
+		label: '薄荷绿',
+		previewColors: ['#eefffc', '#d8fff4'],
+	},
 	dark: {
 		id: 'dark',
 		label: '深色',
@@ -41,21 +56,6 @@ const THEMES: Record<string, Theme> = {
 		label: '日落橙',
 		previewColors: ['#2d1a0a', '#4d2e1a'],
 	},
-	cyberpunk: {
-		id: 'cyberpunk',
-		label: '赛博朋克',
-		previewColors: ['#0a0e27', '#1a1f3a'],
-	},
-	'proton-orange': {
-		id: 'proton-orange',
-		label: '质子橙',
-		previewColors: ['#231600', '#3d2500'],
-	},
-	'antimatter-red': {
-		id: 'antimatter-red',
-		label: '反物质红',
-		previewColors: ['#270a0f', '#3d1118'],
-	},
 	'stardust-gray': {
 		id: 'stardust-gray',
 		label: '星尘灰',
@@ -65,16 +65,6 @@ const THEMES: Record<string, Theme> = {
 		id: 'quantum-purple',
 		label: '量子紫',
 		previewColors: ['#100a27', '#1d1240'],
-	},
-	'ion-green': {
-		id: 'ion-green',
-		label: '离子绿',
-		previewColors: ['#08201a', '#0f2b24'],
-	},
-	'neon-blue': {
-		id: 'neon-blue',
-		label: '霓虹蓝',
-		previewColors: ['#0a1027', '#111a3d'],
 	},
 };
 
