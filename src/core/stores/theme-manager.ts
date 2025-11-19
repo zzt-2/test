@@ -19,7 +19,7 @@ const THEMES: Record<string, Theme> = {
 	light: {
 		id: 'light',
 		label: '浅色',
-		previewColors: ['#ffffff', '#f0f4f8'],
+		previewColors: ['#f0f4f8', '#ffffff'],
 	},
 	warm: {
 		id: 'warm',
@@ -50,11 +50,6 @@ const THEMES: Record<string, Theme> = {
 		id: 'forest',
 		label: '森林绿',
 		previewColors: ['#0d2f1a', '#1a4d2e'],
-	},
-	sunset: {
-		id: 'sunset',
-		label: '日落橙',
-		previewColors: ['#2d1a0a', '#4d2e1a'],
 	},
 	'stardust-gray': {
 		id: 'stardust-gray',
@@ -108,17 +103,6 @@ function createThemeManager() {
 	const initialize = async (): Promise<void> => {
 		// 从 localStorage 读取保存的主题
 		const savedTheme = localStorage.getItem('app-theme') || 'dark';
-		// const savedTheme = 'proton-orange';
-		// const savedTheme = 'antimatter-red';
-		// const savedTheme = 'stardust-gray';
-		// const savedTheme = 'quantum-purple';
-		// const savedTheme = 'ion-green';
-		// const savedTheme = 'neon-blue';
-		// const savedTheme = 'forest';
-		// const savedTheme = 'sunset';
-		// const savedTheme = 'cyberpunk';
-		// const savedTheme = 'ocean';
-		// const savedTheme = 'dark';
 		setTheme(savedTheme);
 	};
 

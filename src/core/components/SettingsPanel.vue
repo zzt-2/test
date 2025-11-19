@@ -16,18 +16,18 @@
           主题设置
         </div>
 
-        <div class="grid grid-cols-4 gap-3">
+        <div class="grid grid-cols-5 gap-8px p-16px rounded-lg my-bg-primary">
           <div v-for="theme in themeManager.themes" :key="theme.id" @click="selectTheme(theme.id)">
             <!-- 主题预览颜色 -->
             <div class="mb-2">
-              <div class="flex h-12 rounded-lg overflow-hidden">
+              <div class="flex h-30px mx-8px rounded-8px overflow-hidden">
                 <div class="flex-1" :style="{ backgroundColor: theme.previewColors[0] }" />
                 <div class="flex-1" :style="{ backgroundColor: theme.previewColors[1] }" />
               </div>
             </div>
 
             <!-- 主题名称 -->
-            <div class="flex-center my-text-secondary font-medium">
+            <div class="flex-center my-text-secondary">
               {{ theme.label }}{{ themeManager.currentThemeId.value === theme.id ? ' (当前)' : '' }}
             </div>
           </div>

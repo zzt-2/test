@@ -26,6 +26,14 @@
 	color: var(--text-placeholder);
 }
 
+.q-checkbox__bg {
+	color: var(--accent);
+}
+
+.q-radio__bg {
+	--text-primary: var(--accent);
+}
+
 .q-checkbox__svg {
 	background-color: var(--bg-primary);
 }
@@ -33,6 +41,10 @@
 .q-list,
 .q-menu {
 	background-color: var(--bg-primary);
+}
+
+.q-item {
+	border: 1px solid var(--border);
 }
 
 .q-icon {
