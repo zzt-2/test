@@ -5,6 +5,8 @@ import pluginQuasar from '@quasar/app-vite/eslint';
 import { defineConfigWithVueTs, vueTsConfigs } from '@vue/eslint-config-typescript';
 import prettierSkipFormatting from '@vue/eslint-config-prettier/skip-formatting';
 
+import unocss from '@unocss/eslint-plugin';
+
 export default defineConfigWithVueTs(
 	{
 		/**
@@ -20,6 +22,12 @@ export default defineConfigWithVueTs(
 
 	pluginQuasar.configs.recommended(),
 	js.configs.recommended,
+	{
+		...unocss.configs.flat.recommended,
+		rules: {
+			'unocss/order': 'warn',
+		},
+	},
 
 	/**
 	 * https://eslint.vuejs.org
